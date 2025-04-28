@@ -47,7 +47,7 @@
                 { title: "S.No", field: "id" },
                 {
                     title: "Service",
-                    field: "service",
+                    field: "name",
                 },
                 {
                     title: "Monthly",
@@ -134,10 +134,10 @@
                                 },
                                 success: function (response) {
                                     $("#pricingId").val(response.id);
-                                    // $("#priceService_id")
-                                    //     .val(response.service_id)
-                                    //     .attr("selected", true);
-                                    $("#priceService").val(response.service);
+                                    $("#priceService_id")
+                                        .val(response.service_id)
+                                        .attr("selected", true);
+                                    // $("#priceService_id").val(response.service);
                                     $("#priceMonthly").val(response.monthly);
                                     $("#priceQuartly").val(response.quartly);
                                     $("#priceHalfyearly").val(

@@ -10,7 +10,7 @@ class Pricing extends Model
     use HasFactory;
 
     protected $fillable = [
-        'service',
+        'service_id',
         'monthly',
         'quartly',
         'halfyearly',

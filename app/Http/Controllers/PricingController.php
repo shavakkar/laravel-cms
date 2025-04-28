@@ -14,8 +14,8 @@ class PricingController extends Controller
 
     public function getPrice()
     {
-        // $price = Pricing::join('services', 'services.id', 'pricings.service_id')->select('pricings.*', 'name')->get();
-        $price = Pricing::latest()->get();
+        $price = Pricing::join('services', 'services.id', 'pricings.service_id')->select('pricings.*', 'name')->get();
+        // $price = Pricing::latest()->get();
 
         return $price;
     }
@@ -29,7 +29,7 @@ class PricingController extends Controller
     public function store(Request $request)
     {
         $validated = $request->validate([
-            'service' => 'required|unique:pricings,service,' . $request->id,
+            'service_id' => 'required|unique:pricings,service_id',
             'monthly' => 'required',
             'quartly' => 'required',
             'halfyearly' => 'required',
@@ -55,7 +55,7 @@ class PricingController extends Controller
         // return dd($service);
 
         $validated = $request->validate([
-            'service' => 'required|unique:pricings,service,' . $request->id,
+            'service_id' => 'required|unique:pricings,service_id,' . $request->id,
             'monthly' => 'required',
             'quartly' => 'required',
             'halfyearly' => 'required',

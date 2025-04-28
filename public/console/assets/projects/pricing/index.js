@@ -11,7 +11,7 @@ $.ajax({
                     .text(response[j].name)
                     .attr('value', response[j].id));
 
-            $('#priceService')
+            $('#priceService_id')
                 .append($('<option>')
                     .text(response[j].name)
                     .attr('value', response[j].id));

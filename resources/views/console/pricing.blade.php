@@ -32,12 +32,12 @@
                                 <div class="mt-3">
                                     <div>
                                         <div class="space-y-2">
-                                            {{-- <select class="ti-form-select" name="service_id" id="service_id">
+                                            <select class="ti-form-select" name="service_id" id="service_id">
                                                 <option value="">Choose an Option</option>
-                                            </select> --}}
-                                            <input type="text" id="service" name="service"
+                                            </select>
+                                            {{-- <input type="text" id="service" name="service"
                                                 placeholder="Enter Service Name"
-                                                class="py-2 px-3 rtl:pl-11 ti-form-input rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10">
+                                                class="py-2 px-3 rtl:pl-11 ti-form-input rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10"> --}}
                                         </div>
                                     </div>
                                 </div>
@@ -143,12 +143,12 @@
                                     <div class="mt-3">
                                         <div>
                                             <div class="grid space-y-2">
-                                                {{-- <select class="ti-form-select" name="service_id" id="priceService_id">
+                                                <select class="ti-form-select" name="service_id" id="priceService_id">
                                                     <option value="">Choose an Option</option>
-                                                </select> --}}
-                                                <input type="text" id="priceService" name="service"
+                                                </select>
+                                                {{-- <input type="text" id="priceService" name="service"
                                                     placeholder="Enter Monthly Amount"
-                                                    class="py-2 px-3 rtl:pl-11 ti-form-input rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10">
+                                                    class="py-2 px-3 rtl:pl-11 ti-form-input rounded-none ltr:rounded-r-sm rtl:rounded-l-sm focus:z-10"> --}}
                                             </div>
                                         </div>
                                     </div>
