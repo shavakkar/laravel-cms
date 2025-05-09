@@ -41,7 +41,7 @@
                                 <!-- single pricing plane -->
                                 @foreach ($pricings as $pricing)
                                     <div class="col-lg-4 col-md-6 col-sm-12 mb--20">
-                                        <h5>{{ $pricing->service }}</h5>
+                                        <h5>{{ $pricing->name }}</h5>
                                         <div class="card">
                                             <div class="card-body">
                                                 <div class="table-responsive">
